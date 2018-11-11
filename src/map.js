@@ -47,6 +47,11 @@ class Map {
 				var cellpos = [carpos[0] + x * this.cellSize, carpos[1] + y * this.cellSize];
 				var pos = [this.cellSize * Math.floor(cellpos[0] / this.cellSize), this.cellSize * Math.floor(cellpos[1] / this.cellSize)];
 				image(textures.bg, pos[0], pos[1], this.cellSize, this.cellSize);
+				threed.push();
+				threed.fill(color(0, 40, 100));
+				threed.translate(pos[0] - 400, pos[1] - 300, 225);
+				threed.box(645, 645, 450);
+				threed.pop();
 			}
 		}
 	}

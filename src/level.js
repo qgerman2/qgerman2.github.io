@@ -30,12 +30,15 @@ class Level {
 		this.GUI.update();
 	}
 	draw() {
+		threed.push();
 		push();
 		this.camera.draw();
 		this.map.draw();
 		this.director.draw();
 		this.player.draw();
+		threed.pop();
 		pop();
+		image(threed, 0 ,0);
 		this.GUI.draw();
 	}
 }

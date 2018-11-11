@@ -26,5 +26,6 @@ class Camera {
 	draw() {
 		scale(this.scale);
 		translate(this.pos[0], this.pos[1]);
+		threed.translate(this.pos[0] - 133, this.pos[1] - 100, -175); //arreglar esta wea algun dia
 	}
 }
